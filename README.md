@@ -95,7 +95,7 @@ Running the development server
 pnpm dev
 ```
 
-Open <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>
+Open <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">http://localhost:3000</a> in your browser to see the result! 🎉
 
 ## 📚 Key Concepts Explained
 
