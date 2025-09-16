@@ -15,13 +15,6 @@ A complete demonstration of **Parallel Routes** and **Intercepted Routes** in Ne
 - **SEO Friendly**: Full page views are crawlable and shareable
 - **Progressive Enhancement**: Works with and without JavaScript
 
-## 🎯 Demo Behavior
-
-- **📱 From Gallery**: Clicking photos opens them in a modal overlay
-- **🔗 Direct URL**: Navigating to `/photos/[id]` directly shows full page view
-- **⬅️ Browser Back**: Closes modal and returns to gallery
-- **🔄 Page Refresh**: Shows full page view (maintains URL structure)
-
 ## 📁 Project Structure
 
 ```
