@@ -136,7 +136,6 @@ Intercepted routes allow you to load a route from another part of your applicati
 
 - [Next.js Parallel Routes Documentation](https://nextjs.org/docs/app/building-your-application/routing/parallel-routes)
 - [Next.js Intercepting Routes Documentation](https://nextjs.org/docs/app/building-your-application/routing/intercepting-routes)
-- [Next.js 15 Release Notes](https://nextjs.org/blog/next-15)
 
 ## 🤝 Contributing
 
@@ -145,10 +144,6 @@ Intercepted routes allow you to load a route from another part of your applicati
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
