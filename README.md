@@ -57,76 +57,47 @@ A complete demonstration of **Parallel Routes** and **Intercepted Routes** in Ne
 ### Prerequisites
 
 - Node.js 18+
-- pnpm (recommended) or npm
+- pnpm (package manager)
 
-### Option 1: Clone and Install
+### Installing pnpm (if not exist)
+
+If you don't have pnpm installed, you can install it using the following command:
+
+Installation
 
 ```bash
-# Clone the repository
-git clone git@github.com:Mustafa-Sh-Ahmad/parallel-and-intercepted-routes.git
+npm install -g pnpm
 ```
 
-```bash
-cd nextjs-parallel-intercepted-routes
-```
+Verify Installation
 
 ```bash
-# Install dependencies with pnpm
-pnpm install
+pnpm --version
 ```
 
+> **💡 Why pnpm?** pnpm is faster and more disk-space efficient than npm. It creates hard links instead of copying files, saving space and installation time. [Learn more about pnpm](https://pnpm.io/motivation).
+
+### Quick Start
+
+Installing the project
+
 ```bash
-# Start development server
+pnpm create next-app@latest photo-gallery --example https://github.com/Mustafa-Sh-Ahmad/parallel-and-intercepted-routes
+```
+
+Going to the project directory
+
+```bash
+cd photo-gallery
+```
+
+Running the development server
+
+```bash
 pnpm dev
 ```
 
-### Option 2: Create from Scratch
-
-```bash
-# Create new Next.js project with TypeScript
-pnpm create next-app@latest my-photo-gallery --typescript --eslint --app --no-tailwind --no-src-dir
-cd my-photo-gallery
-
-# Create required directories
-mkdir -p app/photos/[id]
-mkdir -p "app/@modal/(.)photos/[id]"
-mkdir -p components data types
-
-# Remove default files (we'll replace them)
-rm -rf app/page.tsx app/layout.tsx app/globals.css
-
-# Copy all the files from the artifact above
-# Then install dependencies
-pnpm install
-
-# Start development server
-pnpm dev
-```
-
-### Option 3: Manual Setup
-
-1. **Create Next.js project:**
-
-   ```bash
-   pnpm create next-app@latest my-photo-gallery --typescript --eslint --app
-   cd my-photo-gallery
-   ```
-
-2. **Create folder structure:**
-
-   ```bash
-   mkdir -p app/photos/[id]
-   mkdir -p "app/@modal/(.)photos/[id]"
-   mkdir -p components data types
-   ```
-
-3. **Copy all files** from the code examples above
-
-4. **Install and run:**
-   ```bash
-   pnpm install
-   pnpm dev
-   ```
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result! 🎉
 
 ## 📚 Key Concepts Explained
 
