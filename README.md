@@ -61,9 +61,7 @@ A complete demonstration of **Parallel Routes** and **Intercepted Routes** in Ne
 
 ### Installing pnpm (if not exist)
 
-If you don't have pnpm installed, you can install it using the following command:
-
-Installation
+If you don't have pnpm installed, you can install it using the following command
 
 ```bash
 npm install -g pnpm
@@ -97,7 +95,7 @@ Running the development server
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the result! 🎉
+Open <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>
 
 ## 📚 Key Concepts Explained
 
