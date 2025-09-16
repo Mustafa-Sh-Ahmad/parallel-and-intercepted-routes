@@ -97,6 +97,13 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the result! 🎉
 
+## 💡 Tips
+
+- **Direct URL Access**: Try navigating directly to [http://localhost:3000/photos/1](http://localhost:3000/photos/1) vs clicking from gallery
+- **Browser DevTools**: Check the Network tab to see different loading behavior
+- **Mobile**: The modal experience works great on mobile devices
+- **SEO**: Each photo has its own URL and is fully indexable
+
 ## 📚 Key Concepts Explained
 
 ### Parallel Routes (@modal)
@@ -149,13 +156,6 @@ Intercepted routes allow you to load a route from another part of your applicati
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## 💡 Tips
-
-- **Direct URL Access**: Try navigating directly to `/photos/1` vs clicking from gallery
-- **Browser DevTools**: Check the Network tab to see different loading behavior
-- **Mobile**: The modal experience works great on mobile devices
-- **SEO**: Each photo has its own URL and is fully indexable
 
 ---
 
