@@ -95,7 +95,7 @@ Running the development server
 pnpm dev
 ```
 
-Open <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">http://localhost:3000</a> in your browser to see the result! 🎉
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result! 🎉
 
 ## 📚 Key Concepts Explained
 
@@ -128,92 +128,9 @@ export default function RootLayout({
 Intercepted routes allow you to load a route from another part of your application within the current layout.
 
 - `(.)` - intercept routes at the same level
-- `(..)` - intercept routes one level up (deprecated in Next.js 15)
-- `(..)(..)` - intercept routes two levels up
-- `(...)` - intercept routes from the root
-
-### Next.js 15 Changes
-
-This project is updated for Next.js 15 with the following changes:
-
-1. **Intercepted route syntax**: Uses `(.)` instead of `(..)` for same-level interception
-2. **Async params**: Route parameters must be awaited:
-   ```typescript
-   export default async function Page({ params }: { params: Promise<{ id: string }> }) {
-     const { id } = await params; // ← Must await
-     // ...
-   }
-   ```
-
-## 🎨 Customization
-
-### Adding More Photos
-
-Edit `data/photos.ts` to add more photos:
-
-```typescript
-export const photos: Photo[] = [
-  {
-    id: "7",
-    title: "Your Photo Title",
-    description: "Your photo description",
-    imageUrl: "https://your-image-url.com/photo.jpg",
-    photographer: "Photographer Name",
-  },
-  // ... more photos
-];
-```
-
-### Styling
-
-- Edit `app/globals.css` for global styles
-- Modify component styles inline or extract to CSS modules
-- The project uses vanilla CSS for maximum compatibility
-
-### Adding Features
-
-- **Image optimization**: Already configured with Next.js Image component
-- **Loading states**: Add loading components in route folders
-- **Error handling**: Add error.tsx files in route folders
-- **Metadata**: Add metadata exports to page components
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-```bash
-# Install Vercel CLI
-pnpm i -g vercel
-
-# Deploy
-vercel
-```
-
-### Other Platforms
-
-This is a standard Next.js app and can be deployed to:
-
-- Netlify
-- Railway
-- Heroku
-- AWS
-- Any Node.js hosting platform
-
-Build the project:
-
-```bash
-pnpm build
-pnpm start
-```
-
-## 🔧 Available Scripts
-
-```bash
-pnpm dev          # Start development server
-pnpm build        # Build for production
-pnpm start        # Start production server
-pnpm lint         # Run ESLint
-```
+- `(..)` - intercept routes one level above
+- `(..)(..)` - intercept routes two levels above
+- `(...)` - intercept routes from the root app directory
 
 ## 📖 Learn More
 
