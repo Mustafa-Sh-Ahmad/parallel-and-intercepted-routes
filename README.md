@@ -99,7 +99,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the r
 
 ## 💡 Tips
 
-- **Direct URL Access**: Try navigating directly to [http://localhost:3000/photos/1](http://localhost:3000/photos/1) vs clicking from gallery
+- **Direct URL Access**: Try navigating directly to [http://localhost:3000/photos/1](http://localhost:3000/photos/1) vs clicking from gallery [http://localhost:3000/photos](http://localhost:3000/photos)
 - **Browser DevTools**: Check the Network tab to see different loading behavior
 - **Mobile**: The modal experience works great on mobile devices
 - **SEO**: Each photo has its own URL and is fully indexable
