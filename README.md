@@ -24,33 +24,31 @@ A complete demonstration of **Parallel Routes** and **Intercepted Routes** in Ne
 
 ## 📁 Project Structure
 
-```
 ├── app/
-│   ├── @modal                       # Parallel route slot
-│   │   ├── (.)photos/               # Intercepted route (Next.js 15 syntax)
-│   │   │   └── [id]/
-│   │   │       └── page.tsx         # Modal photo page
-│   │   └── default.tsx              # Required for parallel routes
-│   ├── photos/
-│   │   ├── [id]/
-│   │   │   └── page.tsx             # Individual photo page
-│   │   ├── layout.tsx               # Photos layout
-│   │   ├── page.tsx                 # Photo gallery page
-│   ├── globals.css                  # Global styles
-│   ├── layout.tsx                   # Root layout with parallel slots
-│   ├── page.tsx                     # Home page
+│ ├── @modal # Parallel route slot
+│ │ ├── (.)photos/ # Intercepted route (Next.js 15 syntax)
+│ │ │ └── [id]/
+│ │ │ └── page.tsx # Modal photo page
+│ │ └── default.tsx # Required for parallel routes
+│ ├── photos/
+│ │ ├── [id]/
+│ │ │ └── page.tsx # Individual photo page
+│ │ ├── layout.tsx # Photos layout
+│ │ ├── page.tsx # Photo gallery page
+│ ├── globals.css # Global styles
+│ ├── layout.tsx # Root layout with parallel slots
+│ ├── page.tsx # Home page
 ├── components/
-│   ├── Modal.tsx                    # Modal component
-│   ├── PhotoCard.tsx                # Photo card component
-│   └── Navigation.tsx               # Navigation component
+│ ├── Modal.tsx # Modal component
+│ ├── PhotoCard.tsx # Photo card component
+│ └── Navigation.tsx # Navigation component
 ├── data/
-│   └── photos.ts                    # Sample photo data
+│ └── photos.ts # Sample photo data
 ├── types/
-│   └── photo.ts                     # TypeScript interfaces
+│ └── photo.ts # TypeScript interfaces
 ├── next.config.js
 ├── package.json
 └── tsconfig.json
-```
 
 ## 🛠️ Installation
 
