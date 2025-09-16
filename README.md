@@ -26,19 +26,19 @@ A complete demonstration of **Parallel Routes** and **Intercepted Routes** in Ne
 
 ```
 ├── app/
-│   ├── layout.tsx                    # Root layout with parallel slots
-│   ├── page.tsx                      # Home page
-│   ├── globals.css                   # Global styles
+│   ├── @modal                       # Parallel route slot
+│   │   ├── (.)photos/               # Intercepted route (Next.js 15 syntax)
+│   │   │   └── [id]/
+│   │   │       └── page.tsx         # Modal photo page
+│   │   └── default.tsx              # Required for parallel routes
 │   ├── photos/
+│   │   ├── [id]/
+│   │   │   └── page.tsx             # Individual photo page
 │   │   ├── layout.tsx               # Photos layout
 │   │   ├── page.tsx                 # Photo gallery page
-│   │   └── [id]/
-│   │       └── page.tsx             # Individual photo page
-│   └── @modal/                      # Parallel route slot
-│       ├── default.tsx              # Required for parallel routes
-│       └── (.)photos/               # Intercepted route (Next.js 15 syntax)
-│           └── [id]/
-│               └── page.tsx         # Modal photo page
+│   ├── globals.css                  # Global styles
+│   ├── layout.tsx                   # Root layout with parallel slots
+│   ├── page.tsx                     # Home page
 ├── components/
 │   ├── Modal.tsx                    # Modal component
 │   ├── PhotoCard.tsx                # Photo card component
@@ -47,9 +47,9 @@ A complete demonstration of **Parallel Routes** and **Intercepted Routes** in Ne
 │   └── photos.ts                    # Sample photo data
 ├── types/
 │   └── photo.ts                     # TypeScript interfaces
+├── next.config.js
 ├── package.json
-├── tsconfig.json
-└── next.config.js
+└── tsconfig.json
 ```
 
 ## 🛠️ Installation
